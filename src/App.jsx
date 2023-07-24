@@ -24,6 +24,7 @@ import { ExperimentProvider } from 'ExperimentContext';
 import track from 'tracking';
 
 import fakeData from 'data/services/lms/fakeData/courses';
+import favIcon from './assets/favicon.ico';
 import LearnerDashboardHeader from './containers/LearnerDashboardHeader';
 
 import messages from './messages';
@@ -76,6 +77,7 @@ export const App = () => {
     <Router>
       <Helmet>
         <title>{formatMessage(messages.pageTitle)}</title>
+        <link rel="icon" type="image/x-icon" href={favIcon} />
       </Helmet>
       <div>
         <LearnerDashboardHeader />
