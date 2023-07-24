@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { getConfig } from '@edx/frontend-platform';
 import { useIntl } from '@edx/frontend-platform/i18n';
 import { Button } from '@edx/paragon';
 
@@ -36,7 +35,7 @@ export const ExpandedHeader = () => {
         </Button>
         <Button
           as="a"
-          href={urls.programsUrl}
+          href="#"
           variant="inverse-primary"
           className="p-4"
         >
@@ -54,7 +53,7 @@ export const ExpandedHeader = () => {
         <span className="flex-grow-1" />
         <Button
           as="a"
-          href={getConfig().SUPPORT_URL}
+          href="https://support.edx.org/hc/en-us"
           variant="inverse-primary"
           className="p-4"
         >
